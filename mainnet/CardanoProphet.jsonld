@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "CardanoProphet",
+    "motivations": "As a \"Cardano shrimp,\" I am dedicated to uniting small holders to collaboratively shape the future of Cardano. If I receive sufficient delegations and interest from the community, I intend to develop an internal governance portal that empowers delegators to vote and provide feedback before any final decisions are made. My objective is to ensure that my role as a DRep reflects the collective will of the delegators, rather than my personal preferences. Together, we can build a more inclusive and democratic governance model that truly represents the voice of every stakeholder, regardless of their stake size.",
+    "objectives": "I believe the Cardano Treasury is a vital resource that requires careful planning and rigorous evaluation, rather than simply a means for distribution. As a dRep, I am committed to safeguarding treasury funds from malicious actors and ensuring that they are allocated to proposals that deliver genuine value to the Cardano ecosystem. My focus will be on supporting initiatives that contribute to the long-term growth and sustainability of the network, while maintaining the integrity of the treasury for the benefit of the entire community.",
+    "paymentAddress": "addr1qyd3pkpuf7jvcctez3m0ulgv0676lw2zysf7y3832r20a2ll624xzhdznn5pqcy93p2nzvzmfe6cksq8ze2wqmqu44nsv0sndy",
+    "qualifications": "With a robust technical background and extensive experience in the Cardano ecosystem, I have been actively contributing to Cardano DeFi since the Alonzo hardfork. Since October 2023, I have also engaged with the Cardano Twitter community, where I focus on delivering technical insights and raising awareness about malicious actors in our community. \n\nI have also free time Cardano projects: CardaPort.io (set of userful Cardano tools, like a free cNFT minter) and CardaCraft (Cardano Virtual World, like Pavia/UE/...)",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Twitter - CardanoProphet",
+        "uri": "https://x.com/CardanoProphet"
+      },
+      {
+        "@type": "Link",
+        "label": "Twitter - CardaCraft",
+        "uri": "https://x.com/CardaCraft"
+      },
+      {
+        "@type": "Link",
+        "label": "Website - CardaPort",
+        "uri": "https://cardaport.io/"
+      },
+      {
+        "@type": "Link",
+        "label": "Website - CardaCraft",
+        "uri": "https://linktr.ee/cardacraft"
+      },
+      {
+        "@type": "Identity",
+        "label": "Twitter - CardanoProphet",
+        "uri": "https://x.com/CardanoProphet"
+      }
+    ]
+  }
+}
