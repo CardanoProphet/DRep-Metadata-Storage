@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "The Council",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://i.ibb.co/Tx2jw0RQ/thecouncil.png",
+      "sha256": "1510defd4a46aaa0cb4f6370d2a98ec965d7107bf4321ce5038f908ba3b9333a"
+    },
+    "motivations": "My motivation to become a DRep stems from recognizing that many community members are currently excluded from governance participation due to practical constraints.\n\nNot everyone is willing or able to allocate 500 ADA for self-delegation, nor does everyone have the time or desire to actively vote on every proposal. Despite this, many still want their voice to be heard.\n\nI aim to represent this silent majority - those who care about the direction of Cardano but prefer a more accessible and flexible way to participate. Through The Council, delegators can express their preferences in a simple and low-friction way, while the system ensures their input meaningfully contributes to final governance decisions.\n\nAdditionally, by introducing incentives for participation, I hope to encourage more consistent and engaged involvement from the community, ultimately leading to better-informed and more representative outcomes.",
+    "objectives": "As a DRep, I believe governance should reflect the collective will of the community rather than rely solely on individual decision-makers. My primary objective is to make participation in Cardano governance more accessible, inclusive, and representative.\n\nTo achieve this, I propose introducing “The Council” (ddRep / d²Rep), a system where delegators can freely signal their preferences without incurring transaction costs, while also being incentivized for active participation. These signals are then aggregated and used to guide the final governance decision.\n\nBy lowering barriers to participation and ensuring that delegators have a direct influence on outcomes, I aim to strengthen democratic engagement within the Cardano ecosystem and make governance more aligned with the broader community.",
+    "paymentAddress": "addr1q8rv0dxak8f0lk73g8tp9zah2l2ghu8wwdhw7g80hy0g0vpn3fznl76r99svusv36008q572e6530hp7kduqha2f86hqeljknq",
+    "qualifications": "- I have been working as a smart contract developer on Cardano since the Alonzo Hard Fork, gaining deep familiarity with the platform’s architecture and capabilities.\n- I have extensive experience with Cardano smart contracts, governance mechanisms, and the broader ecosystem, allowing me to evaluate proposals from both a technical and practical perspective.\n- I am actively building The Council platform, which demonstrates my commitment to improving governance processes and my understanding of the challenges involved.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Twitter / X",
+        "uri": "https://x.com/CardanoProphet"
+      },
+      {
+        "@type": "Identity",
+        "label": "Twitter / X",
+        "uri": "https://x.com/CardanoProphet"
+      }
+    ]
+  }
+}
